@@ -19,6 +19,7 @@ myTuple2 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(myTuple2[2 : 5])  # ('cherry', 'orange', 'kiwi')
 
 # Example 4: changing tuple items---------------------------------------------------------------------------
+
 # By default:
 # 1) we cannot modify existing value
 # 2) we cannot append a new value

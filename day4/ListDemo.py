@@ -7,7 +7,7 @@
 myList1 = [10, 20, 30, 40, 50]
 myList2 = ["cherry", "banana", "apple"]
 myList3 = ["cherry", 10, "apple", 20]
-myList = list()                         # empty list
+myList = list()                        # empty list
 
 print(myList1)
 print(myList1[0])
