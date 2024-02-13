@@ -28,4 +28,36 @@ print(myset4) # {'mango', 'apple', 'banana', 'grape', 'orange', 'cherry'}
 myset5 = {"apple", "banana", "cherry"}
 print(len(myset5)) # 3
 
+# Example 6: remove items from a set - remove(); discard()--------------------------------------------------
 
+myset6 = {"apple", "banana", "cherry"}
+myset6.remove("banana")
+print(myset6) # {'apple', 'cherry'}
+#myset6.remove("abc") # KeyError: 'abc'
+myset6.discard("apple")
+print(myset6) # {'cherry'}
+myset6.discard("abc")
+print(myset6) # {'cherry'} # will not throw any error
+
+# Example 7: clear all items from a set - clear() ---------------------------------------------------------
+
+myset7 = {"apple", "banana", "cherry"}
+myset7.clear()
+print(myset7) # set()
+
+del myset7
+#print(myset7) # NameError: name 'myset7' is not defined. Did you mean: 'myset1'?
+
+# Example 8: joining two sets - union() --------------------------------------------------------------------
+
+set8 = {"a", "b", "c"}
+set9 = {1, 2, 3}
+set10 = set8.union(set9)
+print(set10) # {'a', 1, 2, 'b', 3, 'c'}
+
+# update()
+
+set11 = {"a", "b", "c"}
+set12 = {1, 2, 3}
+set11.update(set12)
+print(set11) # {'c', 1, 2, 3, 'b', 'a'}
