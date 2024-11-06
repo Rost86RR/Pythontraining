@@ -13,11 +13,6 @@ data2 = pd.DataFrame({
     'quantity_sold': [10, 20, 15]
 })
 
-print('DataFrame1')
-print(data1)
-print('DataFrame2')
-print(data2)
-
 # Объединение по строкам
 concat_rows = pd.concat([data1, data2], ignore_index=True)
 print("\nОбъединение по строкам:")
@@ -28,14 +23,7 @@ concat_columns = pd.concat([data1, data2], axis=1)
 print("\nОбъединение по столбцам:")
 print(concat_columns)
 
-data11 = pd.DataFrame({
-    'product': ['Widget A', 'Widget B'],
-    'price': [100, 200]
-})
 
-data22 = pd.DataFrame({
-    'quantity_sold': [10, 15]
-})
 
 
 
